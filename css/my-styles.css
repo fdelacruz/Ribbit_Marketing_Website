@@ -48,6 +48,14 @@ h1 {
 /* layout
 ================================= */
 
+.ft {
+  margin-bottom: 72px;
+ }
+
+ .ft-copy {
+   padding-top: 32px;
+ }
+
 /* Jumbotron
 ================================= */
 
@@ -102,6 +110,29 @@ h1 {
   background-size: 140%;
 }
 
+.ft-icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 164px;
+  height: 102px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: url('../img/feature-icons.png') no-repeat;
+  background-size: 100%;
+}
+
+.friends::before {
+  background-position: 0 -105px;
+} 
+
+.cloud::before { 
+  background-position: 0 -210px;
+}
+
 .ft-icon.friends {
   background-position: -500px 0;
 }
@@ -123,7 +154,7 @@ h1 {
 
 @media (max-width: 767px) {
   .navbar {
-      min-height: 60px;
+    min-height: 60px;
   }
   .main-logo {
     width: 82px;
@@ -134,5 +165,5 @@ h1 {
   }
   .lead {
     margin-top: 40px;
-   }
+  }
 }
